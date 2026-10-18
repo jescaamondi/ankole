@@ -1,58 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>reservation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Ankole practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="reservation.css">
 </head>
 <body>
     <div class="img-container">
-        <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg">
+        <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg" alt="Ankole logo">
     
     <div class="heading">Karibu</div>
     <h1>Reservation</h1>
     </div>
-    <div class="form-container">
+    <form class="form-container">
         <div class="input-box">
             <label for="name">Name</label>
-            <input type="text" placeholder="">   
+            <input type="text" id="name" name="name" required>   
         </div>
         <div class="input-box">
             <label for="location">Location</label>
-            <input type="text" placeholder="">  
+            <input type="text" id="location" name="location">  
         </div>
         <div class="input-box">
-            <label for="emai">Email Address</label>
-            <input type="email" placeholder="">
-        
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
         </div>
         <div class="input-box">
-            <label for="Tel/cell">Tel/cell</label>
-            <input type="tel" placeholder="">
+            <label for="phone">Tel/cell</label>
+            <input type="tel" id="phone" name="phone" required>
         </div>
         <div class="input-box">
-            <label for="Number of guests">Number of guests</label>
-            <input type="number" placeholder="">
+            <label for="guests">Number of guests</label>
+            <input type="number" id="guests" name="guests" min="1" required>
         </div>
         <div class="input-box">
             <label for="date">Date</label>
-            <input type="date" placeholder="">
+            <input type="date" id="date" name="date" required>
         </div>
         <div class="input-box">
             <label for="time">Time</label>
-            <input type="time" placeholder="">
+            <input type="time" id="time" name="time" required>
         </div>
-        <button class="submit-btn">Submit</button>
-    </div>  
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>  
     <div class="child2">
             <div class="socials">
-                <a href="#" class="instagram"></a>
-                <a href="#" class="facebook"></a>
-
+                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
             <footer>
                 <ul class="navbar">
                     <li><button class="menu-toggle">☰</button></li>
                     <li><button class="clock">🕒</button></li>
-                    <li><a href="ankole.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="branches.html">Menu</a></li>
                     <li><a href="review.html">Review</a></li>
                     <li><a href="event.html">Event</a></li>
@@ -60,7 +62,7 @@
                     <li><a href="contact.html">Contacts</a></li>
                     <li><a href="reservation.html" class="btn">Reservations</a></li>
                 </ul>
-                <a href="#" class="whatsapp"></a>
+                <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
             </footer>
     </div>  
 </body>
