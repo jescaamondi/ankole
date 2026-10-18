@@ -1,0 +1,29 @@
+.story {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c300769e92e351d540231f_bg.jpg") center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 170px 24px 130px;
+}
+
+.story-text {
+    max-width: 680px;
+    text-align: center;
+}
+
+.story-text h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    margin-bottom: 24px;
+}
+
+.story-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.story-text .tagline {
+    font-size: 32px;
+    margin-bottom: 0;
+}

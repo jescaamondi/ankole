@@ -1,173 +1,109 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-body {
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  width: 100vw;
+.reservation {
+    display: flex;
+    min-height: 100vh;
 }
 
 .img-container {
-  background: url("https://img.freepik.com/premium-photo/tropical-forest-with-square-frame-black-background_730620-98898.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 50%;
-}
-
-.img-container img {
-  margin-left: 400px;
-  height: 200px;
-  width: 200px;
-}
-
-.img-container::after {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  content: "";
-  z-index: 3;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 170px 24px 60px;
+    background-size: cover;
+    background-position: center;
 }
 
 .heading {
-  color: white;
-  font-size: 30px;
-  margin-left: 50%;
-  margin-top: 200px;
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--gold);
+    font-size: 36px;
 }
 
-h1 {
-  color: yellow;
-  font-size: 100px;
-  margin-left: 25%;
+.img-container h1 {
+    font-size: clamp(48px, 7vw, 96px);
 }
 
 .form-container {
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rbga(0, 255, 255, 0.3);
-  width: 50%;
-  height: 15px;
-  text-align: center;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 20px;
+    align-content: center;
+    padding: 170px 60px 140px;
 }
 
-.input-box {
-  position: relative;
-  margin: 20px;
+.input-box.full,
+.submit-btn,
+.form-message {
+    grid-column: 1 / -1;
 }
 
 .input-box label {
-  color: white;
-  text-align: left;
-  margin-right: 84%;
+    display: block;
+    color: var(--grey);
+    font-size: 13px;
+    margin-bottom: 6px;
 }
 
-.input-box input {
-  width: 100%;
-  padding: 12px 15px;
-  background-color: black;
-  border: 2px;
-  border-color: white;
-  border-radius: 5px;
-  border-style: solid;
-  color: white;
-  font-size: 17px;
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: transparent;
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: var(--white);
+    font: inherit;
+    color-scheme: dark;
+}
+
+.input-box select option {
+    background-color: var(--black);
+}
+
+.input-box input:focus,
+.input-box select:focus {
+    outline: none;
+    border-color: var(--gold);
 }
 
 .submit-btn {
-  background-color: bisque;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 25px;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.4s;
-  margin-top: 10px;
-  width: 90%;
+    background-color: var(--gold);
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-  background-color: whitesmoke;
-  color: blue;
+    background-color: var(--white);
 }
 
-.child2 {
-  position: absolute;
-  z-index: 7;
+.form-message {
+    color: var(--gold);
+    text-align: center;
+    min-height: 20px;
 }
 
-.navbar {
-  background-color: black;
-  border-radius: 20px;
-  width: 560px;
-  display: flex;
-  gap: 15px;
-  margin-left: 200px;
-  margin-top: 900px;
-  padding: 12px 20px;
-  border: none;
-  list-style: none;
-}
+@media (max-width: 800px) {
+    .reservation {
+        flex-direction: column;
+    }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  transition:
-    opacity 0.3s,
-    color 0.2s;
-}
+    .img-container {
+        min-height: 45vh;
+        padding: 140px 24px 40px;
+    }
 
-.navbar a:hover {
-  color: gold;
-}
-
-.btn {
-  background-color: gray;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 15px;
-  transition:
-    color 0.3s,
-    background-color 0.3s;
-}
-
-.btn:hover {
-  color: gold;
-  background: bisque;
-}
-.whatsapp {
-  margin-left: 112rem;
-}
-
-.whatsapp a {
-  color: white;
-  text-decoration: none;
-  background: gold;
-  border-radius: 20px;
-  position: absolute;
-  transition: opacity 0.3s;
-  bottom: 40px;
-  right: 40px;
-}
-
-.menu-toggle,
-.clock {
-  width: 20px;
-  height: 20px;
-  color: white;
-  background-color: black;
-  border: none;
-  cursor: pointer;
+    .form-container {
+        grid-template-columns: 1fr;
+        padding: 40px 24px 140px;
+    }
 }

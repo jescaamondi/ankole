@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts | Ankole practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
-   
-    <div class="container">
-        <div class="container1">
-            <p>Kitisuru<br>
-                Address: 0.6A, Kitisuru Rd, Nairobi<br>
-                Hours: Open 9 am ⋅ Closes 11 pm<br>
-                Bookings & Orders:<br>
-                0703 212 121 / 0701 138 345<br>
-                Email: sales@ankole.co.ke<br>
-                events@ankole.co.ke<br></p>
+    <div class="practice-note">Practice recreation · not the official Ankole Grill website</div>
+
+    <header class="site-header">
+        <a href="index.html" class="logo"><img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg" alt="Ankole logo"></a>
+        <div class="socials">
+            <a href="https://www.instagram.com/ankolegrill/" class="instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ankolegrill" class="facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
         </div>
-        <div class="container2">
-            <p>Kilimani<br>
-                Address: PQ6M+R2X, Galana Rd,
-                Nairobi<br>
-                Hours: Open<br>
-                Mon - Fri: 7:30 am ⋅ Closes 11 pm<br>
-                Sat & Sun: 9:00am - 11pm<br>
-                Bookings & Orders:<br>
-                0710 202 020<br>
-                Email: sales@ankole.co.ke<br>
-                events@ankole.co.ke<br>
-            </p>
-        </div>
-    
-     <div class="child2">
-            <div class="socials">
-                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+    </header>
+
+    <main class="contact" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c300769e92e351d540231f_bg.jpg');">
+        <h1>Contacts</h1>
+        <div class="branches">
+            <div class="branch">
+                <h2>Kitisuru</h2>
+                <p><strong>Address</strong>0.6A, Kitisuru Rd, Nairobi</p>
+                <p><strong>Hours</strong>Mon - Sun: 9.00am - 11.00pm</p>
+                <p><strong>Bookings &amp; Orders</strong><a href="tel:0703212121">0703 212 121</a> / <a href="tel:0701138345">0701 138 345</a></p>
+                <p><strong>Email</strong><a href="mailto:sales@ankole.co.ke">sales@ankole.co.ke</a><br><a href="mailto:events@ankole.co.ke">events@ankole.co.ke</a></p>
             </div>
-            <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg" alt="Ankole logo">
-            <footer>
-                <ul class="navbar">
-                    <li><button class="menu-toggle">☰</button></li>
-                    <li><button class="clock">🕒</button></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="branches.html">Menu</a></li>
-                    <li><a href="review.html">Review</a></li>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="live.html">Live</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                    <li><a href="reservation.html" class="btn">Reservations</a></li>
-                </ul>
-                <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-            </footer>
-     </div>
-    </div>  
+            <div class="branch">
+                <h2>Kilimani</h2>
+                <p><strong>Address</strong>PQ6M+R2X, Galana Rd, Nairobi</p>
+                <p><strong>Hours</strong>Mon - Sun: 7.30am - 11.00pm</p>
+                <p><strong>Bookings &amp; Orders</strong><a href="tel:0710202020">0710 202 020</a></p>
+                <p><strong>Email</strong><a href="mailto:sales@ankole.co.ke">sales@ankole.co.ke</a><br><a href="mailto:events@ankole.co.ke">events@ankole.co.ke</a></p>
+            </div>
+        </div>
+    </main>
+
+    <nav class="menu-panel" id="menu-panel">
+        <button class="close-btn" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="branches.html">Menu</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="live.html">Live</a></li>
+            <li><a href="contact.html" class="active">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="hours-panel" id="hours-panel">
+        <h3>Opening Hours</h3>
+        <p><strong>Kitisuru</strong><br>Mon - Sun: 9.00am - 11.00pm</p>
+        <p><strong>Kilimani</strong><br>Mon - Sun: 7.30am - 11.00pm</p>
+    </div>
+
+    <footer class="bottom-bar">
+        <ul class="navbar">
+            <li><button class="menu-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button></li>
+            <li><button class="clock" aria-label="Opening hours"><i class="fa-regular fa-clock"></i></button></li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="branches.html">Menu</a></li>
+            <li class="nav-link"><a href="review.html">Reviews</a></li>
+            <li class="nav-link"><a href="event.html">Events</a></li>
+            <li class="nav-link"><a href="live.html">Live</a></li>
+            <li class="nav-link"><a href="contact.html" class="active">Contacts</a></li>
+            <li><a href="reservation.html" class="btn">Reservations</a></li>
+        </ul>
+    </footer>
+
+    <a href="#" class="whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
