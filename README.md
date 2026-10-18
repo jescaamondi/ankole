@@ -4,7 +4,7 @@ In May 2026 I came across the website of [Ankole Grill](https://www.ankole.co.ke
 
 My first version didn't meet the standard I wanted, so I didn't push it. I later came back, rebuilt the layout so it works on any screen size, and added the features I had left out.
 
-<!-- Add a screenshot here: ![Home page](docs/home.png) -->
+<img width="1852" height="1057" alt="image" src="https://github.com/user-attachments/assets/b2fb2b61-95b1-4544-8ee3-ad50788a14cb" />
 
 > **Note:** This is a personal learning project. It is not affiliated with Ankole Grill. The logo, photos, menu items and business details belong to them and are loaded from their site for practice only.
 
