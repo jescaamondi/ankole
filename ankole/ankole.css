@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.container::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    content: "";
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.child1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
+}
+
+.image-1,
+.image-2,
+.image-6,
+.image-4,
+.image-5 {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 25s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.image-1 img,
+.image-2 img,
+.image-6 img,
+.image-4 img,
+.image-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.image-1 {
+    animation-delay: 0s;
+}
+
+.image-2 {
+    animation-delay: 5s;
+
+}
+
+.image-4 {
+    animation-delay: 10s;
+}
+
+.image-5 {
+    animation-delay: 15s;
+}
+
+.image-6 {
+    animation-delay: 20s;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    align-items: center;
+
+}
+
+.child2 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 17;
+
+}
+
+.child2 .socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 110rem;
+
+}
+
+.socials a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    transition: opacity 0.3s, color 0.3s;
+    
+}
+
+.socials a:hover {
+    border-color: gold;
+    color: gold;
+}
+
+.child2>img {
+    margin-left: 700px;
+
+}
+
+.navbar {
+    background-color: black;
+    border-radius: 20px;
+    width: 560px;
+    display: flex;
+    gap: 15px;
+    margin-left: 600px;
+    margin-top: 550px;
+    padding: 12px 20px;
+    border: none;
+    list-style: none;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s, color 0.2s;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+.btn {
+    background-color: gray;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    color: gold;
+    background: bisque;
+
+}
+.whatsapp{
+    margin-left: 112rem;
+}
+
+.whatsapp a {
+    color: white;
+    text-decoration: none;
+    background: gold;
+    border-radius: 20px;
+    position: absolute;
+    transition: opacity 0.3s;
+    bottom: 40px;
+    right: 40px;
+}
+
+.menu-toggle,
+.clock {
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

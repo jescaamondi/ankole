@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img-container {
+  background: url("https://img.freepik.com/premium-photo/tropical-forest-with-square-frame-black-background_730620-98898.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.img-container img {
+  margin-left: 400px;
+  height: 200px;
+  width: 200px;
+}
+
+.img-container::after {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  content: "";
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  color: white;
+  font-size: 30px;
+  margin-left: 50%;
+  margin-top: 200px;
+}
+
+h1 {
+  color: yellow;
+  font-size: 100px;
+  margin-left: 25%;
+}
+
+.form-container {
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rbga(0, 255, 255, 0.3);
+  width: 50%;
+  height: 15px;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  margin: 20px;
+}
+
+.input-box label {
+  color: white;
+  text-align: left;
+  margin-right: 84%;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: black;
+  border: 2px;
+  border-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  color: white;
+  font-size: 17px;
+}
+
+.submit-btn {
+  background-color: bisque;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.submit-btn:hover {
+  background-color: whitesmoke;
+  color: blue;
+}
+
+.child2 {
+  position: absolute;
+  z-index: 7;
+}
+
+.navbar {
+  background-color: black;
+  border-radius: 20px;
+  width: 560px;
+  display: flex;
+  gap: 15px;
+  margin-left: 200px;
+  margin-top: 900px;
+  padding: 12px 20px;
+  border: none;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition:
+    opacity 0.3s,
+    color 0.2s;
+}
+
+.navbar a:hover {
+  color: gold;
+}
+
+.btn {
+  background-color: gray;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
+}
+
+.btn:hover {
+  color: gold;
+  background: bisque;
+}
+.whatsapp {
+  margin-left: 112rem;
+}
+
+.whatsapp a {
+  color: white;
+  text-decoration: none;
+  background: gold;
+  border-radius: 20px;
+  position: absolute;
+  transition: opacity 0.3s;
+  bottom: 40px;
+  right: 40px;
+}
+
+.menu-toggle,
+.clock {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}

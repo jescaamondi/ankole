@@ -1,0 +1,132 @@
+.container1 {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container1 img {
+    margin-left: 40vw;
+    height: 200px;
+    width: 200px;
+}
+
+.container1 h1 {
+    margin-left: 40vw;
+    font-size: 40px;
+    margin-top: 10vw;
+
+}
+
+.container1 p {
+    margin-left: 30vw;
+    font-size: 20px;
+
+}
+
+.container1 h2 {
+    margin-left: 40vw;
+}
+
+#next-slide,
+#prev-slide {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    font-size: 90px;
+    color: white;
+    background: black;
+}
+
+#prev-slide {
+    top: 450px;
+    margin-left: 70vw;
+}
+
+#next-slide {
+    top: 450px;
+    margin-left: 20vw;
+}
+
+#opening img {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 400px;
+    margin-left: 22vw;
+
+}
+
+#closing img {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 600px;
+    margin-left: 70vw;
+}
+
+.navbar {
+    background-color: black;
+    border-radius: 20px;
+    width: 600px;
+    display: flex;
+    gap: 15px;
+    margin-left: 600px;
+    margin-top: 300px;
+    padding: 12px 20px;
+    border: none;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s, color 0.2s;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+.btn {
+    background-color: gray;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.btn:hover {
+    color: gold;
+    background: bisque;
+
+}
+.whatsapp{
+    margin-left: 112rem;
+}
+
+.whatsapp a {
+    color: white;
+    text-decoration: none;
+    background: gold;
+    border-radius: 20px;
+    position: absolute;
+    transition: opacity 0.3s;
+    bottom: 40px;
+    right: 40px;
+
+}
+
+.menu-toggle,
+.clock {
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: black;
+
+}
